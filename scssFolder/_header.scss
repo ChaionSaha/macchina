@@ -1,10 +1,44 @@
+@import './variables';
+
 .header {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	width: 100%;
+	box-sizing: border-box;
+	margin-top: 4vw;
 
 	& div {
 		width: 50%;
+	}
+
+	&-text {
+		margin-left: $margin-left;
+		margin-right: 4vw;
+		& h3 {
+			@include secondary-heading;
+		}
+
+		& h1 {
+			font-weight: 700;
+			font-size: 4vw;
+			text-transform: uppercase;
+			margin-bottom: 1.84vw;
+		}
+
+		& button {
+			text-transform: uppercase;
+			padding: 1.42vw 1.84vw;
+			background-color: #171616;
+			color: #fff;
+			cursor: pointer;
+			font-size: 1vw;
+		}
+	}
+
+	&-img {
+		& img {
+			width: 49.5vw;
+		}
 	}
 }

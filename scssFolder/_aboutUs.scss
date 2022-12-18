@@ -1,0 +1,94 @@
+@import './variables';
+
+.about-us {
+	// box-sizing: border-box;
+	margin-top: 5.05vw;
+	display: flex;
+	align-items: center;
+	width: 100%;
+
+	& div {
+		flex-grow: 1;
+		// width: 49%;
+	}
+
+	& .img {
+		width: 46vw;
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-left: $margin-left;
+		margin-right: 3.05vw;
+
+		& img {
+			width: 100%;
+		}
+
+		& .company-logo {
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			padding: 2.5vw;
+
+			clip-path: polygon(15% 0, 100% 0%, 85% 100%, 0 100%);
+
+			position: absolute;
+			bottom: 0;
+			width: 40vw;
+			transform: translateY(50%);
+			background-color: $font-color-secondary;
+
+			& img {
+				&:nth-child(1) {
+					width: 4.6vw;
+					height: 2.6vw;
+				}
+				&:nth-child(2) {
+					width: 4.2vw;
+					height: 4.47vw;
+				}
+				&:nth-child(3) {
+					width: 5.26vw;
+					height: 4.05vw;
+				}
+			}
+		}
+	}
+
+	& .details {
+		& h3 {
+			text-transform: uppercase;
+			margin-bottom: 0.57vw;
+			@include secondary-heading;
+		}
+
+		& h1 {
+			text-transform: uppercase;
+			font-weight: 700;
+			font-size: 3.05vw;
+			color: #000;
+			width: 24.16vw;
+			margin-bottom: 3.21vw;
+		}
+
+		& p {
+			font-weight: 500;
+			font-size: 1vw;
+			color: #888888;
+			width: 32.1vw;
+			line-height: 1.63vw;
+			margin-bottom: 3vw;
+		}
+
+		& a {
+			text-transform: uppercase;
+			font-size: 1.15vw;
+			font-weight: 600;
+			color: #5e5d5d;
+			& span {
+				margin-left: 1.47vw;
+			}
+		}
+	}
+}

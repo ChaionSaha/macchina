@@ -1,0 +1,21 @@
+$font-color-secondary: #db2411;
+$margin-left: 9vw;
+
+@mixin secondary-heading {
+	color: $font-color-secondary;
+	font-size: 0.84vw;
+	font-weight: 600;
+	letter-spacing: 0.09vw;
+	margin-bottom: 0.47vw;
+	display: flex;
+	align-items: center;
+	& span {
+		display: inline-block;
+		width: 0.7vw;
+		height: 1vw;
+		border: 1px solid $font-color-secondary;
+		transform: skewX(-15deg);
+		background-color: $font-color-secondary;
+		margin-right: 1vw;
+	}
+}
