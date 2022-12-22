@@ -2,12 +2,15 @@
 
 .footer {
 	background: #171616;
+	margin-top: 15vw;
+	padding-bottom: 5.32vw;
 
 	& > .connect {
 		width: 100%;
 		padding: 9.21vw;
 		display: flex;
 		justify-content: space-between;
+		margin-bottom: 4.31vw;
 
 		& > .para {
 			& > h2 {
@@ -22,6 +25,72 @@
 				flex-direction: column;
 				font-weight: 700;
 				font-size: 3.05vw;
+			}
+		}
+
+		& > .image {
+			position: relative;
+
+			& > img {
+				position: absolute;
+				bottom: -1.05vw;
+				right: 0;
+				height: 32vw;
+				z-index: 10;
+			}
+
+			& > .span {
+				background: #db2411;
+				width: 57.26vw;
+				height: 5.26vw;
+				position: absolute;
+				right: -9.21vw;
+				bottom: -1vw;
+				clip-path: polygon(3% 0, 100% 0%, 100% 100%, 0 100%);
+			}
+		}
+	}
+
+	& > .social {
+		display: flex;
+		justify-content: space-between;
+		color: #fff;
+		text-transform: uppercase;
+		padding: 0 9vw;
+		margin-bottom: 6.21vw;
+
+		& > .address,
+		& > .time {
+			& > p:not(:last-of-type) {
+				margin-bottom: 1.9vw;
+			}
+		}
+		& > .time {
+			text-align: right;
+		}
+
+		& > .social-links {
+			& > img:not(:last-of-type) {
+				cursor: pointer;
+				margin-right: 2.47vw;
+			}
+		}
+	}
+
+	& > .copyright {
+		color: #fff;
+		text-transform: uppercase;
+		font-size: 0.84vw;
+		display: flex;
+		justify-content: space-between;
+		padding: 0 9vw;
+
+		& > .links {
+			& > a {
+				cursor: pointer;
+				&:not(:last-of-type) {
+					margin-right: 1.78vw;
+				}
 			}
 		}
 	}
