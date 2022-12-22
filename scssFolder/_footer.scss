@@ -1,0 +1,28 @@
+@import './variables';
+
+.footer {
+	background: #171616;
+
+	& > .connect {
+		width: 100%;
+		padding: 9.21vw;
+		display: flex;
+		justify-content: space-between;
+
+		& > .para {
+			& > h2 {
+				text-transform: uppercase;
+				@include secondary-heading;
+			}
+
+			& > h1 {
+				text-transform: uppercase;
+				color: #fff;
+				display: flex;
+				flex-direction: column;
+				font-weight: 700;
+				font-size: 3.05vw;
+			}
+		}
+	}
+}

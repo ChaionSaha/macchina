@@ -216,6 +216,113 @@ nav .navbar-primary .nav-links ul li:hover {
   margin-left: 1.47vw;
 }
 
+.services {
+  margin-top: 10.21vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.services-heading > h2 {
+  text-transform: uppercase;
+  color: #db2411;
+  font-size: 0.84vw;
+  font-weight: 600;
+  letter-spacing: 0.09vw;
+  margin-bottom: 0.47vw;
+  display: flex;
+  align-items: center;
+}
+.services-heading > h2 span {
+  display: inline-block;
+  width: 0.7vw;
+  height: 1vw;
+  border: 1px solid #db2411;
+  transform: skewX(-15deg);
+  background-color: #db2411;
+  margin-right: 1vw;
+}
+.services-heading > h1 {
+  display: flex;
+  flex-direction: column;
+  font-size: 3.05vw;
+  font-weight: 700;
+  margin-bottom: 2.52vw;
+}
+.services-heading > a {
+  color: #5e5d5d;
+  font-size: 1.15vw;
+  font-weight: 600;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.services-details {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 11.05vw;
+  margin-top: 8.84vw;
+}
+.services-details > .part {
+  width: 20vw;
+  margin-right: 7.52vw;
+  margin-bottom: 9.57vw;
+}
+.services-details > .part:nth-of-type(3), .services-details > .part:nth-of-type(6) {
+  margin-right: 0vw;
+}
+.services-details > .part > img {
+  height: 10.63vw;
+  margin-bottom: 1.1vw;
+}
+.services-details > .part > h3 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.82vw;
+  margin-bottom: 1.26vw;
+}
+.services-details > .part > p {
+  font-size: 1.05vw;
+  font-weight: 500;
+  color: #888;
+}
+
+.footer {
+  background: #171616;
+}
+.footer > .connect {
+  width: 100%;
+  padding: 9.21vw;
+  display: flex;
+  justify-content: space-between;
+}
+.footer > .connect > .para > h2 {
+  text-transform: uppercase;
+  color: #db2411;
+  font-size: 0.84vw;
+  font-weight: 600;
+  letter-spacing: 0.09vw;
+  margin-bottom: 0.47vw;
+  display: flex;
+  align-items: center;
+}
+.footer > .connect > .para > h2 span {
+  display: inline-block;
+  width: 0.7vw;
+  height: 1vw;
+  border: 1px solid #db2411;
+  transform: skewX(-15deg);
+  background-color: #db2411;
+  margin-right: 1vw;
+}
+.footer > .connect > .para > h1 {
+  text-transform: uppercase;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  font-size: 3.05vw;
+}
+
 *,
 *::after,
 *::before {
