@@ -78,8 +78,28 @@ nav {
 						font-size: 1vw;
 						font-weight: 600;
 
+						position: relative;
+						overflow-x: hidden;
+
+						&::after {
+							content: '';
+							height: 2px;
+							background: #000;
+							width: 50%;
+
+							position: absolute;
+							bottom: 30%;
+							left: -1%;
+							transform: translateX(-50%);
+							transition: all 200ms;
+							opacity: 0;
+						}
+
 						&:hover {
-							background-color: #f3f3f3;
+							&::after {
+								left: 50%;
+								opacity: 1;
+							}
 						}
 					}
 				}
