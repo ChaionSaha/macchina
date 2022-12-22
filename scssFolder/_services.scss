@@ -36,9 +36,23 @@
 		margin-top: 8.84vw;
 
 		& > .part {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
 			width: 20vw;
-			margin-right: 7.52vw;
+			margin-right: 5vw;
 			margin-bottom: 9.57vw;
+			padding: 1vw;
+			box-sizing: content-box;
+			border: 1px solid transparent;
+			transition: all 200ms;
+
+			&:hover {
+				//border: 1px solid #888;
+				// border-radius: 1vw;
+				box-shadow: 0px 2vw 100px rgb(230, 227, 227);
+			}
 
 			&:nth-of-type(3),
 			&:nth-of-type(6) {

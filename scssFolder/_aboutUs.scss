@@ -86,8 +86,11 @@
 			font-size: 1.15vw;
 			font-weight: 600;
 			color: #5e5d5d;
+			cursor: pointer;
+
 			& span {
 				margin-left: 1.47vw;
+				transition: all 200ms;
 			}
 		}
 	}

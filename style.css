@@ -242,9 +242,11 @@ nav .navbar-primary .nav-links ul li:hover::after {
   font-size: 1.15vw;
   font-weight: 600;
   color: #5e5d5d;
+  cursor: pointer;
 }
 .about-us .details a span {
   margin-left: 1.47vw;
+  transition: all 200ms;
 }
 
 .services {
@@ -294,9 +296,19 @@ nav .navbar-primary .nav-links ul li:hover::after {
   margin-top: 8.84vw;
 }
 .services-details > .part {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 20vw;
-  margin-right: 7.52vw;
+  margin-right: 5vw;
   margin-bottom: 9.57vw;
+  padding: 1vw;
+  box-sizing: content-box;
+  border: 1px solid transparent;
+  transition: all 200ms;
+}
+.services-details > .part:hover {
+  box-shadow: 0px 2vw 100px rgb(230, 227, 227);
 }
 .services-details > .part:nth-of-type(3), .services-details > .part:nth-of-type(6) {
   margin-right: 0vw;
